@@ -1,0 +1,44 @@
+<?php
+include "../Controller/LoginVoterCNTRL.php";
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>eBallot</title>
+</head>
+<center>
+
+
+<?php
+include('../Model/head.php');
+?>
+  
+  <form action="" method="post" enctype="multipart/form-data">
+    <h3>Welcome to eBallot (Voter)</h3>
+    <br>
+    <table>
+            <tr>
+                <td>Username : </td>
+                <td><input type="text" placeholder="Enter your username" name="uname"></td>
+            </tr>
+            <tr>
+                <td>Password : </td>
+                <td><input type="password" placeholder="Enter your Password" name="password"></td>
+            </tr>
+        </table>
+        <br>
+        <input type="checkbox"  name="remember" value="remember">
+         <label for="remember">Remember Me</label>
+         <br><br>
+    <input type="submit" value="Login" name="login">
+    <br><br>
+    Didn't have account? <a href="RegistrationVoterView.php">Create Account</a>
+</form>
+</center>
+
+<?php
+    include('../Model/foot.php');
+     ?>
+</body>
+</html>
